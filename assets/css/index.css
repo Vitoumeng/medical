@@ -12,8 +12,8 @@
   --body-font: "Open Sans", sans-serif;
   --big-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
+  --h3-font-size: 1.15rem;
+  --normal-font-size: 0.938rem;
   --small-font-size: 0.898rem;
 
   --fw-500: 500;
@@ -26,11 +26,11 @@
 
 @media screen and (min-width: 1120px) {
   :root {
-    --big-font-size: 2.5rem;
-    --h1-font-size: 1.75rem;
-    --h3-font-size: 1.25rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 3rem;
+    --h3-font-size: 2rem;
     --normal-font-size: 1rem;
-    --small-font-size: 0.898rem;
+    --small-font-size: 0.938rem;
   }
 }
 
@@ -110,9 +110,9 @@ ul {
 .section__subtitle {
   text-transform: uppercase;
   text-align: center;
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
   color: var(--first-color);
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-700);
 }
 
 /* Buttons */
@@ -256,7 +256,7 @@ ul {
 }
 
 /* active nav__link */
-.active{
+.active {
   color: var(--first-color);
 }
 
@@ -437,7 +437,7 @@ ul {
 }
 
 .services__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: 0.25rem;
 }
 
@@ -486,7 +486,7 @@ ul {
 }
 
 .featured__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h3-font-size);
   color: var(--bg-color);
   margin-bottom: 0.25rem;
 }
@@ -547,7 +547,7 @@ ul {
 .appointment__subtitle {
   color: var(--first-color);
   text-transform: uppercase;
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-700);
 }
 
 .appointment__title {
@@ -666,7 +666,7 @@ ul {
 
 .special__title {
   color: var(--bg-color);
-  font-size: var(--h1-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
 }
 
@@ -958,10 +958,10 @@ ul {
     margin-inline: auto;
   }
   .section {
-    padding: 9rem 0 7rem;
+    padding-block: 9rem 7rem;
   }
   .home.section {
-    padding: 13rem 0 10rem;
+    padding-block: 13rem 10rem;
   }
   .home__container {
     grid-template-columns: 380px 550px;
@@ -973,11 +973,11 @@ ul {
     width: 340px;
     height: 340px;
   }
-  .home__icon-1{
+  .home__icon-1 {
     top: 8rem;
     left: -1.5rem;
   }
-  .home__icon-2{
+  .home__icon-2 {
     left: 2rem;
     top: 1rem;
   }
@@ -985,12 +985,15 @@ ul {
     grid-template-columns: repeat(4, 0.7fr);
     max-width: 1028px;
   }
-  .schedules__card{
+  .schedules__card {
     width: 240px;
-    height: 300px;
+    height: 320px;
   }
-  .schedules__card-1 .schedules__content{
+  .schedules__card-1 .schedules__content {
     row-gap: 1.5rem;
+  }
+  .schedules__title {
+    font-size: 1.5rem;
   }
   .nav {
     height: calc(var(--header-height) + 2rem);
@@ -1013,14 +1016,14 @@ ul {
     column-gap: 2rem;
   }
   .nav__link {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
   .services__container,
   .appointment__container {
     grid-template-columns: 0.7fr 1fr;
     column-gap: 10rem;
   }
-  
+
   .services__image,
   .appointment__image {
     width: 340px;
@@ -1045,13 +1048,13 @@ ul {
     height: 350px;
   }
   .doctors__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, .8fr);
   }
-  .doctors__card{
+  .doctors__card {
     width: 250px;
   }
   .special__content {
-    row-gap: .5rem;
+    row-gap: 0.5rem;
   }
   .special__img {
     top: -6rem;
@@ -1060,7 +1063,7 @@ ul {
     height: 360px;
     transform: rotate(-60deg);
   }
-  .special__inputs{
+  .special__inputs {
     max-width: 440px;
   }
 }
